@@ -7,36 +7,45 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>User Form</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
  rel="stylesheet" 
  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-crossorigin="anonymous">
+crossorigin="anonymous">  -->
+
 <style type="text/css">
 body {
 	text-align:center;
 	font-family:sans-serif;
 }
-.mb-3 {
-	width:300px; 
-	left:39%;
-	position:relative;
-	
-} 
-.container {
-	top:150px;
-	left:40%;
-	/* border:2px solid grey; */
-	padding:10px;
-}  
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid grey;
+    padding: 10px;
+    width: 300px;
+}
 
+.mb-3 {
+    width: 100%; /* Make the mb-3 div full width */
+    margin-bottom: 10px; /* Add margin to separate mb-3 divs */
+}
 .add {
-	color:white;
-	background-color:Black;
-	width:100px;
-	padding:10px;
-	border-radius:8px;
+    color:white;
+    background-color: Black;
+    width: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+.add:hover {
+    background-color: #333; /* Change background color on hover */
 }
 </style>
+
 </head>
 <body>
 
@@ -52,7 +61,6 @@ body {
  
 
 
-<div class="container">
 
 <form action="insert" method="post">
 <div class="inner">
@@ -80,12 +88,10 @@ body {
   		<input type="text" class="form-control" id="exampleFormControlInput3" value="${list1.city}"  name ="city" style="width:300px">
 	</div>
 	
-	<div class="mb-3">
+	
 		<input type="submit" class="add" value="Save">
-	</div>
+	
 </div>
-
-
-</form></div>
+</form>
 </body>
 </html>
