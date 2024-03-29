@@ -11,12 +11,15 @@ body {
 	text-align:center;
 }
 form {
-	height:150px;
-	left:42%;
-	position:absolute;
-	border:3px solid black;
-	border-radius:20px;
-	padding:25px;
+    height: 150px;
+    width: 200px; /* Set a fixed width for the form */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 25px;
 }
 .container {
 	padding:10px;
